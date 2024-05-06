@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">452804516909</string>
+    <string name="google_api_key" translatable="false">AIzaSyBPtS1wH0VRbjK0ZRYiPhQ0KcaWD0usVkI</string>
+    <string name="google_app_id" translatable="false">1:452804516909:android:7a5c445bcf098618812ca4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBPtS1wH0VRbjK0ZRYiPhQ0KcaWD0usVkI</string>
+    <string name="google_storage_bucket" translatable="false">onebitefoods-2739f.appspot.com</string>
+    <string name="project_id" translatable="false">onebitefoods-2739f</string>
+</resources>
