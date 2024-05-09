@@ -10,6 +10,15 @@ import SelectLogin from './screens/user/SelectLogin';
 import UserLogin from './screens/user/UserLogin';
 import UserSignup from './screens/user/UserSignup';
 import Home from './screens/user/Home';
+import Cart from './screens/user/Cart';
+import Reserve from './screens/user/checkout/Reserve';
+import Address from './screens/user/checkout/Address';
+import AddNewAddress from './screens/user/checkout/AddNewAddress';
+import OrderStatus from './screens/user/checkout/OrderStatus';
+import BookTable from './screens/user/BookTable';
+import Success from './screens/user/Success';
+import Pending from './screens/user/Pending';
+import Completed from './screens/user/Completed';
 
 const Stack = createStackNavigator()
 const AppNavigator = () => {
@@ -54,6 +63,51 @@ const AppNavigator = () => {
         <Stack.Screen
           component={Home}
           name="Home"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={Cart}
+          name="Cart"
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          component={Reserve}
+          name="Reserve"
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          component={Address}
+          name="Address"
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          component={AddNewAddress}
+          name="AddNewAddress"
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          component={OrderStatus}
+          name="OrderStatus"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={BookTable}
+          name="BookTable"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={Success}
+          name="Success"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={Pending}
+          name="Pending"
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          component={Completed}
+          name="Completed"
           options={{headerShown: false}}
         />
       </Stack.Navigator>
