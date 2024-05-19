@@ -1,0 +1,7 @@
+#Mon Apr 15 17:31:42 NPT 2024
+base.0=/Users/rovinpokharel/Desktop/OneBite/android/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.1=/Users/rovinpokharel/Desktop/OneBite/android/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/12/classes.dex
+path.0=0/classes.dex
+path.1=12/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

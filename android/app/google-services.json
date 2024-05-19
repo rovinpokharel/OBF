@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "452804516909",
+    "project_id": "onebitefoods-2739f",
+    "storage_bucket": "onebitefoods-2739f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452804516909:android:7a5c445bcf098618812ca4",
+        "android_client_info": {
+          "package_name": "com.onebitefoods"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPtS1wH0VRbjK0ZRYiPhQ0KcaWD0usVkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
