@@ -1,16 +1,3 @@
-// import { View, Text } from 'react-native'
-// import React from 'react'
-
-// const Items = () => {
-//   return (
-//     <View>
-//       <Text>Items</Text>
-//     </View>
-//   )
-// }
-
-// export default Items
-
 import {
   View,
   Text,
@@ -77,10 +64,10 @@ const Items = () => {
                 <Text style={styles.descText}>{item.data.description}</Text>
                 <View style={styles.priceView}>
                   <Text style={styles.priceText}>
-                    {'$' + item.data.discountPrice}
+                    {'Rs.' + item.data.discountPrice}
                   </Text>
                   <Text style={styles.discountText}>
-                    {'$' + item.data.price}
+                    {'Rs.' + item.data.price}
                   </Text>
                 </View>
               </View>
@@ -167,6 +154,5 @@ const styles = StyleSheet.create({
   icon: {
     width: 24,
     height: 24,
-    // marginRight: 5,
   },
 });

@@ -18,6 +18,7 @@ const Add = () => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState(0);
   const [discountPrice, setDiscountPrice] = useState(0);
+  const [qty,setQty] = useState(0);
   const [description, setDescription] = useState('');
   const [imageUrl, setImageUrl] = useState('');
   const requestCameraPermission = async () => {
@@ -53,33 +54,6 @@ const Add = () => {
     }
   };
 
-  // const uploadImage = async () => {
-  //   const reference = storage().ref(imageData.assets[0].fileName);
-  //   const pathToFile = imageData.assets[0].uri;
-  //   // uploads file
-  //   await reference.putFile(pathToFile);
-  //   const url = await storage()
-  //     .ref(imageData.assets[0].fileName)
-  //     .getDownloadURL();
-  //   console.log(url);
-  //   uploadItem(url);
-  // };
-
-  // const uploadItem = url => {
-  //   firestore()
-  //     .collection('items')
-  //     .add({
-  //       name: name,
-  //       price: price,
-  //       discountPrice: discountPrice,
-  //       description: description,
-  //       imageUrl: url + '',
-  //     })
-  //     .then(() => {
-  //       console.log('Item added!');
-  //     });
-  // };
-
   const uploadImage = async () => {
     try {
       const reference = storage().ref(imageData.assets[0].fileName);
@@ -106,9 +80,11 @@ const Add = () => {
         discountPrice: discountPrice,
         description: description,
         imageUrl: url + '',
+        qty: qty,
       })
       .then(() => {
         console.log('Item added!');
+        // navigation.navigate('Dashboard');
       })
       .catch(error => {
         console.error('Error adding item:', error);
