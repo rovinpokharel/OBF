@@ -24,7 +24,7 @@ const UserLogin = ({navigation}) => {
   //   console.log(await AsyncStorage.getItem('LANG'));
   //   setSelectedLang(parseInt(await AsyncStorage.getItem('LANG')));
   // };
-  const adminLogin = async () => {
+  const userLogin = async () => {
     setModalVisible(true);
     firestore()
       .collection('users')
