@@ -22,56 +22,7 @@ const Home = () => {
         <Profile />
       )}
       <View style={styles.bottomTabView}>
-        {/* <TouchableOpacity
-          style={styles.bottomTab}
-          onPress={() => {
-            setSelectedTab(0);
-          }}>
-          <Image
-            source={require('../../images/home.png')}
-            style={styles.bottomIcon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.bottomTab}
-          onPress={() => {
-            setSelectedTab(1);
-          }}>
-          <Image
-            source={require('../../images/search.png')}
-            style={styles.bottomIcon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.bottomTab}
-          onPress={() => {
-            setSelectedTab(2);
-          }}>
-          <Image
-            source={require('../../images/wish.png')}
-            style={styles.bottomIcon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.bottomTab}
-          onPress={() => {
-            setSelectedTab(3);
-          }}>
-          <Image
-            source={require('../../images/order.png')}
-            style={styles.bottomIcon}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.bottomTab}
-          onPress={() => {
-            setSelectedTab(4);
-          }}>
-          <Image
-            source={require('../../images/profile.png')}
-            style={styles.bottomIcon}
-          />
-        </TouchableOpacity> */}
+      
 
         <TouchableOpacity
           style={styles.bottomTab}

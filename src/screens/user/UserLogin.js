@@ -9,21 +9,13 @@ import React, {useEffect, useState} from 'react';
 import firestore from '@react-native-firebase/firestore';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Loader from '../common/Loader';
-//   import {translation} from '../../utils';
+
 
 const UserLogin = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [modalVisible, setModalVisible] = useState(false);
-  // const [selectedLang, setSelectedLang] = useState(0);
-  // useEffect(() => {
-  //   getLang();
-  // }, []);
-
-  // const getLang = async () => {
-  //   console.log(await AsyncStorage.getItem('LANG'));
-  //   setSelectedLang(parseInt(await AsyncStorage.getItem('LANG')));
-  // };
+  
   const userLogin = async () => {
     setModalVisible(true);
     firestore()
@@ -51,13 +43,7 @@ const UserLogin = ({navigation}) => {
       });
   };
 
-  // const goToNextScreen = async (userId, mobile, name) => {
-  //   await AsyncStorage.setItem('EMAIL', email);
-  //   await AsyncStorage.setItem('USERID', userId);
-  //   await AsyncStorage.setItem('MOBILE', mobile);
-  //   await AsyncStorage.setItem('NAME', name);
-  //   navigation.navigate('Home');
-  // };
+  
   const goToNextScreen = async () => {
     await AsyncStorage.setItem('EMAIL', email);
     navigation.navigate('Home');
@@ -65,19 +51,7 @@ const UserLogin = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>User Login</Text>
-      {/* <Text style={styles.title}>
-          {selectedLang == 0
-            ? translation[1].English
-            : selectedLang == 1
-            ? translation[1].Tamil
-            : selectedLang == 2
-            ? translation[1].Hindi
-            : selectedLang == 3
-            ? translation[1].Punjabi
-            : selectedLang == 4
-            ? translation[1].Urdu
-            : null}
-        </Text> */}
+      
       <TextInput
         style={styles.inputStyle}
         placeholder={'Enter Email Id'}

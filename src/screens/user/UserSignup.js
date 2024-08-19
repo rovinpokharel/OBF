@@ -34,29 +34,7 @@ import {
         })
     }
 
-    // const saveUser = () => {
-    //   setModalVisible(true);
-    //   const userId = uuid.v4();
-    //   firestore()
-    //     .collection('users')
-    //     .doc(userId)
-    //     .set({
-    //       name: name,
-    //       email: email,
-    //       password: password,
-    //       mobile: mobile,
-    //       userId: userId,
-    //       cart: [],
-    //     })
-    //     .then(res => {
-    //       setModalVisible(false);
-    //       navigation.goBack();
-    //     })
-    //     .catch(error => {
-    //       setModalVisible(false);
-    //       console.log(error);
-    //     });
-    // };
+    
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Sign up</Text>
